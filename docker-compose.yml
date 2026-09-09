@@ -6,8 +6,6 @@ services:
       - guacamole_config:/config
     environment:
       TZ: Asia/Kolkata
-    ports:
-      - 127.0.0.1:8080:8080
 
 volumes:
   guacamole_config:
