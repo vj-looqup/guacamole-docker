@@ -1,0 +1,13 @@
+services:
+  guacamole:
+    image: jwetzell/guacamole:1.6.0-20260804
+    restart: unless-stopped
+    volumes:
+      - guacamole_config:/config
+    environment:
+      TZ: Asia/Kolkata
+    ports:
+      - 127.0.0.1:8080:8080
+
+volumes:
+  guacamole_config:
