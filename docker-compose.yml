@@ -7,7 +7,7 @@ services:
     environment:
       TZ: Asia/Kolkata
     ports:
-      - 127.0.0.1:8081:8080
+      - 127.0.0.1:49201:8080
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/"]
       interval: 30s
